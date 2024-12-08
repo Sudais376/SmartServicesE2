@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", serif;
+}
+
+::selection {
+  background-color: #ff6a13; /* Burnt orange background */
+  color: white; /* White text color */
+}
+
+/* Dynamic font sizes for Hero component */
+.hero-text-large {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+  
+  .hero-text-xlarge {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+  
+  .hero-text-medium {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+  
+  .hero-text-small {
+    font-size: clamp(0.875rem, 1.2vw, 1.25rem);
+  }
+  
+  /* Dynamic padding for the button */
+  .button-padding-horizontal {
+    padding-left: clamp(1rem, 2vw, 2rem);
+    padding-right: clamp(1rem, 2vw, 2rem);
+  }
+  
+  .button-padding-vertical {
+    padding-top: clamp(0.5rem, 1vw, 1rem);
+    padding-bottom: clamp(0.5rem, 1vw, 1rem);
+  }
+  
