@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
     <Helmet>
-      <title> Home - SmartServicesE | Concrete Contractors in Lubbock, TX</title>
+      <title> Home - SmartServicesE - Concrete Contractors in Lubbock, TX</title>
     </Helmet>
     
     <Hero />

@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
     <Helmet>
-      <title>About - SmartServicesE | Concrete Contractors in Lubbock, TX</title>
+      <title>About - SmartServicesE - Concrete Contractors in Lubbock, TX</title>
     </Helmet>
     
     <AboutComp />
