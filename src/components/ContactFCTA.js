@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm"; // Import the ContactForm component
 import Submitted from "./Submitted"; // Import the Submitted component
-import AOS from 'aos'
-import ctabg from '../assets/cTAbg.webp';
+import AOS from 'aos';
+import ctabg from '../assets/cTAbg.webp'; // Import the background image
 
-const FinalCTA = () => {
+const ContactFCTA = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
   const [isFormSubmitted, setIsFormSubmitted] = useState(false); // State to manage form submission
 
-
-  useEffect (() => {
-    AOS.init ( { duration : 1000 });
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
 
- 
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen); // Toggle the modal visibility
   };
@@ -34,7 +32,7 @@ const FinalCTA = () => {
         data-aos="fade-up"
         className="relative w-full bg-cover bg-center py-16 text-white"
         style={{
-          backgroundImage: `url(${ctabg})`, // Replace with your image URL
+          backgroundImage: `url(${ctabg})`, // Apply the imported image here
         }}
         aria-labelledby="cta-title"
       >
@@ -49,7 +47,7 @@ const FinalCTA = () => {
               className="text-3xl md:text-4xl font-bold mb-6"
               aria-level="1"
             >
-              Get Your Free Concrete Estimate in Lubbock, TX Today!
+              Ready to Start Your Project?
             </h2>
           </header>
 
@@ -105,4 +103,4 @@ const FinalCTA = () => {
   );
 };
 
-export default FinalCTA;
+export default ContactFCTA;

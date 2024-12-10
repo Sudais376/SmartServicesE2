@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos'
+import hero from '../assets/hero.png'
 
 const ServicesHero = () => {
 
@@ -13,8 +14,8 @@ const ServicesHero = () => {
       {/* Background Image */}
       <img
         className="w-full h-full object-cover"
-        src="/assets/hero.png"
-        srcSet="/assets/hero.png 768w, /assets/hero.png 1280w, /assets/hero.png 1920w"
+        src={hero}
+        srcSet={hero}
         sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
         alt="Completed concrete driveway project by our contractors"
         loading="lazy"

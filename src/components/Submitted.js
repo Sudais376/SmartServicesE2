@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
 import AOS from 'aos'
 
-const Submitted = ({ closePopUp }) => {
+const Submitted = ({ closePopUp, onClose }) => {
+
+  const handleClose = () => {
+    if (closePopUp) closePopUp(); // Invoke closePopUp if it's provided
+    if (onClose) onClose();       // Invoke onClose if it's provided
+  };
 
   useEffect (() => {
     AOS.init ( { duration : 1000 });
@@ -42,7 +47,7 @@ const Submitted = ({ closePopUp }) => {
         </p>
         <div data-aos="fade-up">
           <button
-            onClick={closePopUp} // Close the pop-up when the button is clicked
+            onClick={handleClose} // Close the pop-up when the button is clicked
             className="mt-6 bg-[#F76A1E] hover:bg-[#D9601A] text-white font-bold px-6 py-3 rounded-md transition-all duration-500 w-1/2"
             aria-label="Close the submission popup"
           >

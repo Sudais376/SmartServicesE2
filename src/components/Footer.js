@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import logo from '../assets/logo.png';
+import gmail from '../assets/gMail.svg';
+import whatsapp from '../assets/wA.svg';
+
 
 const Footer = () => {
   useEffect(() => {
@@ -12,10 +16,14 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-around items-center gap-2">
         {/* Logo Section */}
         <div className="flex justify-center items-center pt-12">
-          <Link to="/" className="flex justify-center items-start gap-2" aria-label="Go to homepage">
+          <Link
+            to="/"
+            className="flex justify-center items-start gap-2"
+            aria-label="Go to homepage"
+          >
             <img
               className="hover:scale-105 transition duration-500"
-              src="/assets/logo.png"
+              src={logo}
               width={40}
               alt="SmartServiceE logo"
             />
@@ -26,21 +34,42 @@ const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="pt-6 lg:pt-14 pb-2 lg:pr-20 lg:pb-0">
+        <nav className="pt-6 lg:pt-14 pb-2 lg:pr-16 lg:pb-0">
           <ul className="flex flex-wrap justify-center items-center gap-8 lg:pr-16 px-8">
             <li>
-              <Link to="/" className="text-white hover:!text-[#f76a1e] transition duration-500" aria-label="Go to Home Page">
+              <Link
+                to="/"
+                className="text-white hover:!text-[#f76a1e] transition duration-500"
+                aria-label="Go to Home Page"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-white hover:!text-[#f76a1e] transition duration-500" aria-label="View our services">
+              <Link
+                to="/services"
+                className="text-white hover:!text-[#f76a1e] transition duration-500"
+                aria-label="View our services"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-white hover:!text-[#f76a1e] transition duration-500" aria-label="Learn more about us">
+              <Link
+                to="/about"
+                className="text-white hover:!text-[#f76a1e] transition duration-500"
+                aria-label="Learn more about us"
+              >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="text-white hover:!text-[#f76a1e] transition duration-500"
+                aria-label="Learn more about us"
+              >
+                Contact Us
               </Link>
             </li>
           </ul>
@@ -55,7 +84,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Send an email to SmartServiceE"
             >
-              <img src="/assets/gmail.svg" width={50} alt="Gmail Icon" />
+              <img src={gmail} width={50} alt="Gmail Icon" />
             </a>
 
             <a
@@ -64,7 +93,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Contact us on WhatsApp"
             >
-              <img src="/assets/whatsapp.svg" width={40} alt="WhatsApp Icon" />
+              <img src={whatsapp} width={40} alt="WhatsApp Icon" />
             </a>
           </div>
         </div>

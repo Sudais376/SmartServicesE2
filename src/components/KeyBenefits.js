@@ -1,13 +1,12 @@
-import React, {useEffect} from "react";
-import AOS from 'aos'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import patios from '../assets/pt.webp'
 
 const KeyBenefits = () => {
-
-  useEffect (() => {
-    AOS.init ( { duration : 1000 });
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
 
- 
   const benefits = [
     {
       icon: "🎨",
@@ -74,7 +73,7 @@ const KeyBenefits = () => {
             data-aos="fade-up"
           >
             <img
-              src="/assets/patios.png"
+              src={patios}
               alt="Stamped concrete patio in Lubbock showcasing customizable designs and durability"
               className="w-full rounded-t-lg shadow-lg group-hover:scale-75 transition-all duration-700"
               data-aos="fade-up"

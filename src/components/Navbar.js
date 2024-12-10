@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import SmNavbar from "./SmNavbar";
+import logo from '../assets/logo.png';
+import menu from '../assets/menu.png';
 
 const Navbar = () => {
   const [isSmNavbarVisible, setSmNavbarVisible] = useState(false);
@@ -20,7 +22,7 @@ const Navbar = () => {
           <div className="brand">
             <Link to="/" aria-label="Go to homepage">
               <img
-                src="/assets/logo.png"
+                src={logo}
                 width={50}
                 alt="SmartServiceE logo - a minimalist abstract shape resembling a slab of concrete"
                 loading="lazy"
@@ -36,7 +38,7 @@ const Navbar = () => {
               className="cursor-pointer"
             >
               <img
-                src="/assets/menu.png"
+                src={menu}
                 width={50}
                 alt="Menu Icon"
                 aria-hidden="true"
@@ -71,6 +73,15 @@ const Navbar = () => {
                   aria-label="Learn more about us"
                 >
                   About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-[#2C2C2C] hover:text-[#F76A1E] transition-all duration-500 hover:underline"
+                  aria-label="Learn more about us"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

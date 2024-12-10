@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import stdconc from '../assets/STDCont.png';
+import drWays from '../assets/drWays.webp';
+import patios from '../assets/pt.webp';
+import wWays from '../assets/wWays.webp';
 
 const KeyServices = () => {
   useEffect(() => {
@@ -11,7 +15,7 @@ const KeyServices = () => {
     {
       id: 1,
       title: "Stamped Concrete",
-      imgSrc: "/assets/stampedConcrete.png",
+      imgSrc: stdconc, // Direct image import
       altText: "Stamped Concrete Service",
       description:
         "Transform your outdoor spaces with stamped concrete designs that combine style and durability. Perfect for patios, driveways, and more in Lubbock, TX.",
@@ -19,7 +23,7 @@ const KeyServices = () => {
     {
       id: 2,
       title: "Drive Ways",
-      imgSrc: "/assets/driveWays.png",
+      imgSrc: drWays, // Direct image import
       altText: "Drive Ways Concrete Service",
       description:
         "Create sleek, strong, and reliable driveways with our premium concrete solutions, designed to enhance your property's curb appeal.",
@@ -27,7 +31,7 @@ const KeyServices = () => {
     {
       id: 3,
       title: "Patios",
-      imgSrc: "/assets/patios.png",
+      imgSrc: patios, // Direct image import
       altText: "Patio Concrete Service",
       description:
         "Upgrade your outdoor living space with our expertly crafted concrete patios that are both functional and visually stunning.",
@@ -35,7 +39,7 @@ const KeyServices = () => {
     {
       id: 4,
       title: "Walk Ways",
-      imgSrc: "/assets/walkWays.png",
+      imgSrc: wWays, // Direct image import
       altText: "Walk Ways Concrete Service",
       description:
         "Build durable and attractive walkways that add charm and accessibility to your home or business property in Lubbock.",
@@ -61,7 +65,7 @@ const KeyServices = () => {
 
       {/* Services Grid */}
       <div
-        className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8"
         data-aos="fade-up"
         aria-live="polite"
       >
@@ -75,12 +79,12 @@ const KeyServices = () => {
             {/* Image Container */}
             <div className="relative overflow-hidden rounded-t-md">
               <img
-                className="w-full h-[210px] object-cover rounded-t-md  transition-all duration-700"
-                src={service.imgSrc}
+                className="w-full h-[210px] object-cover rounded-t-md transition-all duration-700"
+                src={service.imgSrc} // Using the correct src path
                 alt={service.altText}
                 loading="lazy"
-                srcSet={`${service.imgSrc}?w=400&h=210 400w, ${service.imgSrc}?w=800&h=420 800w`}
-                sizes="(max-width: 400px) 400px, 800px"
+                // If you want responsive images, here's how you can use srcSet:
+                srcSet={`${service.imgSrc} 1x, ${service.imgSrc} 2x`} // For a single image, 1x and 2x (you can modify as needed)
               />
               {/* Hover Overlay */}
               <div

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import logo from "../assets/logo.png";
+import close from "../assets/close.png";
 
 const SmNavbar = ({ onClose }) => {
   useEffect(() => {
@@ -9,11 +11,14 @@ const SmNavbar = ({ onClose }) => {
 
   return (
     <>
-      <header className="fixed top-0 z-30 w-full bg-white py-2 shadow-sm shadow-slate-300 flex flex-col px-8" role="navigation">
+      <header
+        className="fixed top-0 z-30 w-full bg-white py-2 shadow-sm shadow-slate-300 flex flex-col px-8"
+        role="navigation"
+      >
         <div data-aos="fade-down" className="brand flex justify-between">
           <Link onClick={onClose} to="/" aria-label="Go to homepage">
             <img
-              src="/assets/logo.png"
+              src={logo}
               width={50}
               alt="SmartServiceE logo - a minimalist abstract shape resembling a slab of concrete"
               loading="lazy"
@@ -27,7 +32,7 @@ const SmNavbar = ({ onClose }) => {
               className="cursor-pointer"
             >
               <img
-                src="/assets/close.png"
+                src={close}
                 width={50}
                 alt="Close Menu Icon"
                 aria-hidden="true"
@@ -69,6 +74,18 @@ const SmNavbar = ({ onClose }) => {
               aria-label="Learn more about us"
             >
               About
+            </Link>
+            <hr
+              data-aos="fade-left"
+              className="border-b border-[#F76A1E] mb-4"
+            />
+            <Link
+              onClick={onClose}
+              to="/contact"
+              className="text-[#2C2C2C] hover:text-[#F76A1E] transition-all duration-500 hover:underline"
+              aria-label="Learn more about us"
+            >
+              Contact Us
             </Link>
             <hr
               data-aos="fade-left"

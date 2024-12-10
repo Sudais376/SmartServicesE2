@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0af2f016.css",
+    "main.js": "/static/js/main.0249db20.js",
+    "static/js/453.7fe102c4.chunk.js": "/static/js/453.7fe102c4.chunk.js",
+    "static/media/cTAbg.webp": "/static/media/cTAbg.c565cba0882bd91cbacb.webp",
+    "static/media/drWays.webp": "/static/media/drWays.9c9bab2a8e59dce4bc04.webp",
+    "static/media/ComrCont.webp": "/static/media/ComrCont.6f365136d314ee4ca800.webp",
+    "static/media/pt.webp": "/static/media/pt.a437320eabc636599595.webp",
+    "static/media/ftWork.webp": "/static/media/ftWork.23519c887d9daf5817d9.webp",
+    "static/media/wWays.webp": "/static/media/wWays.45e5f72890dda914a667.webp",
+    "static/media/hero.png": "/static/media/hero.d507f73e5989b1bdf394.png",
+    "static/media/STDCont.png": "/static/media/STDCont.d34c64c11e3e4e5fac92.png",
+    "static/media/logo.png": "/static/media/logo.8ff32837a42fdc754e15.png",
+    "index.html": "/index.html",
+    "static/media/wA.svg": "/static/media/wA.120e8faf4c2046b3dc8f3054245ba70c.svg",
+    "static/media/gMail.svg": "/static/media/gMail.592ce2766bb31a4c920460859cad4bbb.svg",
+    "main.0af2f016.css.map": "/static/css/main.0af2f016.css.map",
+    "main.0249db20.js.map": "/static/js/main.0249db20.js.map",
+    "453.7fe102c4.chunk.js.map": "/static/js/453.7fe102c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0af2f016.css",
+    "static/js/main.0249db20.js"
+  ]
+}

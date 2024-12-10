@@ -1,18 +1,13 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import hero from "../assets/hero.png";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <div className="relative w-full h-[600px]">
       {/* Background Image */}
       <img
         className="w-full h-full object-cover"
-        src="/assets/hero.png"
-        srcSet="/assets/hero.png 768w, /assets/hero.png 1280w, /assets/hero.png 1920w"
+        src={hero}
+        srcSet={hero}  // Use the same image for all screen sizes
         sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
         alt="Completed concrete driveway project by our contractors"
         loading="lazy"

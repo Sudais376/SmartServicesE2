@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import stdCont from '../assets/STDCont.png';
+import drWays from '../assets/drWays.webp';
+import patios from '../assets/pt.webp';
+import wWays from '../assets/wWays.webp';
+import ftWork from '../assets/ftWork.webp';
+import cmrCont from '../assets/ComrCont.webp';
 
 const Services = () => {
   useEffect(() => {
@@ -11,37 +17,37 @@ const Services = () => {
     {
       id: 1,
       title: "Stamped Concrete",
-      imgSrc: "/assets/stampedConcrete.png",
+      imgSrc: stdCont, // Use the imported image
       altText: "Stamped Concrete Service",
     },
     {
       id: 2,
       title: "Drive Ways",
-      imgSrc: "/assets/driveWays.png",
+      imgSrc: drWays,
       altText: "Drive Ways Concrete Service",
     },
     {
       id: 3,
       title: "Patios",
-      imgSrc: "/assets/patios.png",
+      imgSrc: patios,
       altText: "Patio Concrete Service",
     },
     {
       id: 4,
       title: "Walk Ways",
-      imgSrc: "/assets/walkWays.png",
+      imgSrc: wWays,
       altText: "Walk Ways Concrete Service",
     },
     {
       id: 5,
       title: "Flat Work",
-      imgSrc: "/assets/flatWork.png",
+      imgSrc: ftWork,
       altText: "Flat Work Concrete Service",
     },
     {
       id: 6,
       title: "Commercial Concrete",
-      imgSrc: "/assets/commercialConcrete.png",
+      imgSrc: cmrCont,
       altText: "Commercial Concrete Service",
     },
   ];
@@ -83,7 +89,8 @@ const Services = () => {
                 src={service.imgSrc}
                 alt={service.altText}
                 loading="lazy"
-                srcSet={`${service.imgSrc}?w=400&h=210 400w, ${service.imgSrc}?w=800&h=420 800w`}
+                // Removed srcSet because we are using the same image for all screens
+                // Instead, use the "sizes" for responsive design
                 sizes="(max-width: 400px) 400px, 800px"
               />
               {/* Hover Overlay */}

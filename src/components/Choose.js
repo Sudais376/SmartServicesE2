@@ -1,13 +1,14 @@
-import React, {useEffect} from "react";
-import AOS from 'aos'
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import location from '../assets/location.png';
+import priceTag from '../assets/pricingTag.png';
+import hammer from '../assets/hammer.png';
 
 const Choose = () => {
-
-  useEffect (() => {
-    AOS.init ( { duration : 1000 });
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
 
- 
   return (
     <>
       <section
@@ -41,12 +42,11 @@ const Choose = () => {
               >
                 <header className="flex justify-center items-center">
                   <img
-                    src="/assets/location.png"
+                    src={location} // Use imported image directly
                     alt="Location Pin Icon"
                     width={30}
                     height={30}
                     loading="lazy"
-                    srcSet="/assets/location.png 1x, /assets/location.png 2x"
                   />
                 </header>
                 <div className="pt-3">
@@ -71,12 +71,11 @@ const Choose = () => {
               >
                 <header className="flex justify-center items-center">
                   <img
-                    src="/assets/pricingTag.png"
+                    src={priceTag} // Use imported image directly
                     alt="Pricing Tag Icon"
                     width={30}
                     height={30}
                     loading="lazy"
-                    srcSet="/assets/pricingTag.png 1x, /assets/pricingTag.png 2x"
                   />
                 </header>
                 <div className="pt-3">
@@ -100,12 +99,11 @@ const Choose = () => {
               >
                 <header className="flex justify-center items-center">
                   <img
-                    src="/assets/hammer.png"
+                    src={hammer} // Use imported image directly
                     alt="Hammer Icon"
                     width={30}
                     height={30}
                     loading="lazy"
-                    srcSet="/assets/hammer.png 1x, /assets/hammer.png 2x"
                   />
                 </header>
                 <div className="pt-3">
