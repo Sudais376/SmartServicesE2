@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import SmNavbar from "./SmNavbar";
-import logo from '../assets/logo.png';
-import menu from '../assets/menu.png';
+import logo from "../assets/logo.png";
+import menu from "../assets/menu.png";
 
 const Navbar = () => {
   const [isSmNavbarVisible, setSmNavbarVisible] = useState(false);
@@ -37,16 +37,11 @@ const Navbar = () => {
               onClick={toggleSmNavbar}
               className="cursor-pointer"
             >
-              <img
-                src={menu}
-                width={50}
-                alt="Menu Icon"
-                aria-hidden="true"
-              />
+              <img src={menu} width={50} alt="Menu Icon" aria-hidden="true" />
             </button>
           </div>
 
-          <nav className="hidden md:flex pl-36 ">
+          <nav className="hidden md:flex ">
             <ul className="flex gap-10 font-semibold">
               <li>
                 <Link
@@ -64,6 +59,15 @@ const Navbar = () => {
                   aria-label="View our services"
                 >
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-[#2C2C2C] hover:text-[#F76A1E] transition-all duration-500 hover:underline"
+                  aria-label="Learn more about us"
+                >
+                  Blog
                 </Link>
               </li>
               <li>

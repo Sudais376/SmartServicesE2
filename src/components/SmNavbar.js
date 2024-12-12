@@ -69,6 +69,14 @@ const SmNavbar = ({ onClose }) => {
             />
             <Link
               onClick={onClose}
+              to="/blog"
+              className="text-[#2C2C2C] hover:text-[#F76A1E] transition-all duration-500 hover:underline"
+              aria-label="Learn more about us"
+            >
+              Blog
+            </Link>
+            <Link
+              onClick={onClose}
               to="/about"
               className="text-[#2C2C2C] hover:text-[#F76A1E] transition-all duration-500 hover:underline"
               aria-label="Learn more about us"

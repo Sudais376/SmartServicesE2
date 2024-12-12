@@ -55,6 +55,15 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+                <Link
+                  to="/blog"
+                  className="text-white hover:!text-[#F76A1E] transition-all duration-500 hover:underline"
+                  aria-label="Learn more about us"
+                >
+                  Blog
+                </Link>
+              </li>
+            <li>
               <Link
                 to="/about"
                 className="text-white hover:!text-[#f76a1e] transition duration-500"

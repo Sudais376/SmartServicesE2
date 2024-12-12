@@ -19,19 +19,16 @@ const Hero = () => {
       {/* Hero Text */}
       <div className="absolute top-[20%] w-full text-center text-white">
         <h1
-          data-aos="fade-down"
           className="hero-text-large font-bold max-w-[1000px] mx-auto px-2"
         >
           Lubbock’s Top Concrete Contractors
         </h1>
         <h2
-          data-aos="fade-up"
           className="hero-text-medium text-[#eaeaea] max-w-[800px] mx-auto py-4 px-2"
         >
           Reliable, Durable, and Beautiful Concrete Solutions.
         </h2>
         <p
-          data-aos="fade-up"
           className="hero-text-small text-[#eaeaea] max-w-[800px] mx-auto pt-2 pb-4 px-2"
         >
           From driveways to patios, we deliver affordable and long-lasting

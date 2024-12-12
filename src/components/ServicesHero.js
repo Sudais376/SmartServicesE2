@@ -27,19 +27,16 @@ const ServicesHero = () => {
       {/* Hero Text */}
       <div className="absolute top-[20%] w-full text-center text-white">
         <h1
-          data-aos="fade-down"
           className="hero-text-large font-bold max-w-[1000px] mx-auto px-2"
         >
           High-Quality Stamped Concrete in Lubbock, TX
         </h1>
         <h2
-          data-aos="fade-up"
           className="hero-text-medium text-[#eaeaea] max-w-[800px] mx-auto py-4 px-2"
         >
            Affordable, Durable, and Custom Designs
         </h2>
         <p
-          data-aos="fade-up"
           className="hero-text-small text-[#eaeaea] max-w-[800px] mx-auto pt-2 pb-4 px-2"
         >
           Your Trusted Concrete Company in Lubbock, TX for Stunning Outdoor Spaces
