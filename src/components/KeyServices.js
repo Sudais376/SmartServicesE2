@@ -49,7 +49,7 @@ const KeyServices = () => {
   return (
     <section
       data-aos="fade-up"
-      className="py-12 px-6 bg-gray-50"
+      className="py-12 px-6 bg-gray-50  "
       aria-labelledby="services-section"
     >
       {/* Section Heading */}
@@ -65,7 +65,7 @@ const KeyServices = () => {
 
       {/* Services Grid */}
       <div
-        className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8"
+        className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 max-w-[1300px] mx-auto "
         data-aos="fade-up"
         aria-live="polite"
       >

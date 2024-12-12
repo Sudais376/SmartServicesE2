@@ -75,6 +75,10 @@ const SmNavbar = ({ onClose }) => {
             >
               Blog
             </Link>
+            <hr
+              data-aos="fade-left"
+              className="border-b border-[#F76A1E] mb-4"
+            />
             <Link
               onClick={onClose}
               to="/about"

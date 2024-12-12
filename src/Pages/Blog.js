@@ -1,35 +1,42 @@
 import React, { useEffect } from "react";
 import BlogComp from "../components/BlogComp";
-import STDCont from "../assets/STDCont.png";
+import Blog5 from "../assets/blog5.webp";
+import drWays from "../assets/drWays.webp";
 import hero from "../assets/hero.png";
+import Blog1 from "../assets/blog1.webp";
 import ContactFCTA from "../components/ContactFCTA";
 import { Helmet } from "react-helmet";
+import Blog2 from "../assets/blog2.webp";
+import Blog3 from "../assets/blog3.webp";
+import Blog4 from "../assets/blog4.webp";
 
 const Blog = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
+
+  useEffect (() => {
+    window.scrollTo (0, 2400);
   }, []);
+
 
   const featuredBlogs = [
     {
-      image: STDCont,
+      image: Blog1,
       alt: "Concrete driveway maintenance tips",
       title:
         "Expert Tips, Project Ideas, and Maintenance Advice for Homeowners and Businesses in Lubbock",
       description:
         "Explore expert advice on maintaining your driveway and enhancing its lifespan amidst Texas weather challenges.",
-      link: "/blog1",
+      link: "/expert-tips-project-ideas-and-maintanance",
     },
     {
-      image: STDCont,
+      image: Blog2,
       alt: "Stamped concrete for homes",
       title: "Stamped Concrete: A Popular Choice for Homeowners in Lubbock",
       description:
         "Discover why stamped concrete is a favored choice for durability and aesthetic appeal in Lubbock homes.",
-      link: "/blog2",
+      link: "/stamped-concrete-a-popular-chioce-for-homeowners",
     },
     {
-      image: STDCont,
+      image: Blog3,
       alt: "Stamped concrete patio benefits",
       title: "5 Benefits of Stamped Concrete for Your Lubbock Home",
       description:
@@ -37,20 +44,20 @@ const Blog = () => {
       link: "/5-benefits-of-stamped-concrete",
     },
     {
-      image: STDCont,
+      image: Blog4,
       alt: "Concrete driveway maintenance guide",
       title: "Concrete Driveway Maintenance: Tips for Longevity",
       description:
         "Find out essential maintenance practices to ensure your driveway withstands the test of time and weather.",
-      link: "/blog2",
+      link: "/concrete-driveways-maintanance-tips",
     },
     {
-      image: STDCont,
+      image: Blog5,
       alt: "Stamped vs regular concrete comparison",
       title: "Stamped vs. Regular Concrete: What’s Best for Lubbock Homes",
       description:
         "Compare the benefits and drawbacks of stamped and regular concrete to make the best choice for your home.",
-      link: "/blog2",
+      link: "/stamped-vs-regular-concrete",
     },
   ];
 
@@ -67,15 +74,15 @@ const Blog = () => {
         {/* Background Image */}
         <img
           className="w-full h-full object-cover"
-          src={hero}
-          srcSet={hero} // Use the same image for all screen sizes
+          src={drWays}
+          srcSet={drWays} // Use the same image for all screen sizes
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
           alt="Completed concrete driveway project by our contractors"
           loading="lazy"
         />
       </div>
 
-      <div className="bg-gray-50">
+      <div className="bg-gray-50  ">
         {/* Header */}
         <header
           data-aos="fade-up"
@@ -104,7 +111,7 @@ const Blog = () => {
         <main className="py-8 px-4 md:px-8">
           {/* Concrete Contractor Guide */}
           <section
-            className="container mx-auto py-8 max-w-[1300px] "
+            className="container mx-auto py-8 max-w-[1000px] "
             data-aos="fade-up"
           >
             <article>
@@ -205,7 +212,7 @@ const Blog = () => {
           </section>
 
           {/* Featured Blogs */}
-          <section data-aos="fade-up" className="py-8 max-w-[1300px] mx-auto">
+          <section data-aos="fade-up" className="py-8 max-w-[1000px] mx-auto">
             <div data-aos="fade-up" className="container mx-auto">
               <h2
                 data-aos="fade-up"

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import stdCont from '../assets/STDCont.png';
-import drWays from '../assets/drWays.webp';
-import patios from '../assets/pt.webp';
-import wWays from '../assets/wWays.webp';
-import ftWork from '../assets/ftWork.webp';
-import cmrCont from '../assets/ComrCont.webp';
+import stdCont from "../assets/STDCont.png";
+import drWays from "../assets/drWays.webp";
+import patios from "../assets/pt.webp";
+import wWays from "../assets/wWays.webp";
+import ftWork from "../assets/ftWork.webp";
+import cmrCont from "../assets/ComrCont.webp";
 
 const Services = () => {
   useEffect(() => {
@@ -19,36 +19,48 @@ const Services = () => {
       title: "Stamped Concrete",
       imgSrc: stdCont, // Use the imported image
       altText: "Stamped Concrete Service",
+      description:
+        "Transform your outdoor spaces with stamped concrete, combining beauty and durability. Perfect for driveways, patios, and walkways, it mimics natural stone, brick, or tile for an elegant look at an affordable price.",
     },
     {
       id: 2,
       title: "Drive Ways",
       imgSrc: drWays,
       altText: "Drive Ways Concrete Service",
+      description:
+        "Upgrade your home's curb appeal with expertly crafted concrete driveways. Built to withstand heavy loads and harsh weather, our durable designs blend style and strength seamlessly.",
     },
     {
       id: 3,
       title: "Patios",
       imgSrc: patios,
       altText: "Patio Concrete Service",
+      description:
+        "Create a stunning and functional outdoor space with our concrete patios. Ideal for entertaining or relaxing, they offer unmatched resilience and a polished finish to suit your style.",
     },
     {
       id: 4,
       title: "Walk Ways",
       imgSrc: wWays,
       altText: "Walk Ways Concrete Service",
+      description:
+        "Enhance the safety and charm of your property with concrete walkways. Designed for durability and low maintenance, they provide a clean, modern look for residential and commercial spaces.",
     },
     {
       id: 5,
       title: "Flat Work",
       imgSrc: ftWork,
       altText: "Flat Work Concrete Service",
+      description:
+        "Achieve smooth, even surfaces with our precision concrete flat work. From floors to foundations, our expert techniques ensure long-lasting results that meet the highest standards.",
     },
     {
       id: 6,
       title: "Commercial Concrete",
       imgSrc: cmrCont,
       altText: "Commercial Concrete Service",
+      description:
+        "Boost your business with high-performance commercial concrete solutions. From parking lots to industrial floors, our designs are tailored to handle heavy traffic and demanding environments.",
     },
   ];
 
@@ -89,8 +101,6 @@ const Services = () => {
                 src={service.imgSrc}
                 alt={service.altText}
                 loading="lazy"
-                // Removed srcSet because we are using the same image for all screens
-                // Instead, use the "sizes" for responsive design
                 sizes="(max-width: 400px) 400px, 800px"
               />
               {/* Hover Overlay */}
@@ -113,6 +123,10 @@ const Services = () => {
               >
                 {service.title}
               </h3>
+              {/* Card Description */}
+              <p className="text-sm md:text-base text-gray-700 mt-4 text-center">
+                {service.description}
+              </p>
             </div>
           </div>
         ))}
